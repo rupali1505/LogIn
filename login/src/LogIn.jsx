@@ -32,7 +32,7 @@ export default function LogIn() {
     <div>
       <h2>Login Page</h2>
       {valid ? (
-        <p>Welcome,user</p>
+        <p>Welcome, user</p>
       ) : (
         <>
           {err && <p>Invalid username or password</p>}
@@ -47,7 +47,7 @@ export default function LogIn() {
             />
             <br />
 
-            <label>Password</label>
+            <label>Password:</label>
 
             <input
               type="password"

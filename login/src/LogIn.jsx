@@ -32,7 +32,7 @@ export default function LogIn() {
     <div>
       <h2>Login Page</h2>
       {valid ? (
-        <p>Welcome,user!</p>
+        <p>Welcome,user</p>
       ) : (
         <>
           {err && <p>Invalid username or password</p>}
@@ -42,6 +42,7 @@ export default function LogIn() {
               type="text"
               required
               name="username"
+              value={logInForm.username}
               onChange={(e) => handleChange(e)}
             />
             <br />
@@ -52,6 +53,7 @@ export default function LogIn() {
               type="password"
               required
               name="password"
+              value={logInForm.password}
               onChange={(e) => handleChange(e)}
             />
             <br />
